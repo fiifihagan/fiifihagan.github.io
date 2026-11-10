@@ -56,6 +56,10 @@
   .certs b { display: block; }
   .certs span { color: var(--muted); font-size: 14px; }
   .verify { margin-left: 8px; font-size: 13px; font-weight: 600; }
+  .gallery { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); margin: 22px 0 0; padding: 0; }
+  .gallery figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .gallery img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .gallery figcaption { padding: 10px 14px; font-size: 14px; color: var(--muted); }
   .next { margin-top: 14px; color: var(--muted); font-style: italic; }
   .note { color: var(--muted); font-size: 14px; margin: -6px 0 6px; }
   .samples { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
@@ -259,6 +263,22 @@
       <li>Panelist and moderator, Fintech for Inclusion Africa Summit, on cybersecurity and digital trust</li>
       <li>Featured cybersecurity expert on national media (TV3, MX24)</li>
     </ul>
+
+    <div class="gallery">
+      <figure>
+        <img src="images/speaking-mobex.jpg" alt="Charles Fiifi Hagan speaking at a podium in front of the MOBEX Africa stage backdrop" loading="lazy" width="1200" height="800">
+        <figcaption>Speaking at MOBEX Africa 2026</figcaption>
+      </figure>
+      <figure>
+        <img src="images/speaking-gitex-nigeria.jpg" alt="Charles Fiifi Hagan speaking on the GITEX Nigeria 2025 stage" loading="lazy" width="1200" height="800">
+        <figcaption>Speaking at GITEX Nigeria 2025</figcaption>
+      </figure>
+      <figure>
+        <img src="images/speaking-panel.jpg" alt="Panel discussion on stage at Academic City University" loading="lazy" width="1200" height="900" style="object-position:center 85%">
+        <figcaption>Panel discussion at Academic City University</figcaption>
+      </figure>
+    </div>
+
   </section>
 
   <section id="memberships">
