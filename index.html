@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charles Fiifi Hagan – Portfolio</title>
+<meta name="description" content="IT governance, risk and compliance. ISO 27001 Lead Auditor. Accra, Ghana.">
+<style>
+  :root {
+    --bg: #fafaf7; --surface: #ffffff; --text: #1c2430; --muted: #5b6675;
+    --accent: #0f5c4d; --accent-soft: #e3f1ed; --border: #e2e5e9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11161c; --surface: #19212a; --text: #e8ecf0; --muted: #9aa6b4;
+      --accent: #5fc4aa; --accent-soft: #1d3a34; --border: #2a3541;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header.hero { padding: 64px 0 40px; border-bottom: 1px solid var(--border); }
+  .avatar {
+    width: 64px; height: 64px; border-radius: 50%; background: var(--accent);
+    color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 22px;
+    margin-bottom: 18px;
+  }
+  h1 { margin: 0 0 6px; font-size: clamp(28px, 5vw, 40px); line-height: 1.15; }
+  .tagline { color: var(--muted); margin: 0 0 20px; font-size: 18px; }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 9px 18px; border-radius: 8px; text-decoration: none;
+    border: 1px solid var(--accent); font-weight: 600; font-size: 15px;
+  }
+  .btn.primary { background: var(--accent); color: var(--bg); }
+  nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 5; }
+  nav .wrap { display: flex; gap: 18px; overflow-x: auto; padding: 12px 20px; }
+  nav a { text-decoration: none; color: var(--muted); font-size: 14px; white-space: nowrap; }
+  nav a:hover { color: var(--accent); }
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 22px; margin: 0 0 16px; }
+  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 26px 0 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 0; }
+  .chips li { background: var(--accent-soft); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; }
+  .card h4 { margin: 0; font-size: 17px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 2px 0 8px; }
+  .card p { margin: 0; }
+  .certs { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .certs li { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; }
+  .certs b { display: block; }
+  .certs span { color: var(--muted); font-size: 14px; }
+  .verify { margin-left: 8px; font-size: 13px; font-weight: 600; }
+  .next { margin-top: 14px; color: var(--muted); font-style: italic; }
+  .note { color: var(--muted); font-size: 14px; margin: -6px 0 6px; }
+  .samples { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .sample { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; }
+  .sample h4 { margin: 0 0 6px; font-size: 16px; line-height: 1.3; }
+  .sample p { margin: 0 0 12px; font-size: 14px; color: var(--muted); flex: 1; }
+  .sample a.dl { font-weight: 600; font-size: 14px; text-decoration: none; }
+  .sample a.dl:hover { text-decoration: underline; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .05em; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); margin-bottom: 8px; align-self: flex-start; }
+  ul.plain { padding-left: 20px; margin: 0; }
+  ul.plain li { margin-bottom: 6px; }
+  footer { margin-top: 56px; padding: 28px 0 48px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="avatar" aria-hidden="true">CH</div>
+    <h1>Charles Fiifi Hagan</h1>
+    <p class="tagline">IT governance, risk and compliance. ISO 27001 Lead Auditor. Accra, Ghana.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:hagancharles14@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/charles-hagan-itaudit1" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#services">What I do</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work samples</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#memberships">Memberships</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I help organisations turn security frameworks into controls that stand up to an audit. Over four years I have completed gap and readiness assessments against ISO/IEC 27001:2022, SOC 2, NIST CSF and PCI DSS, drafted security policies and procedures, assessed third-party vendors and kept risk registers moving to closure.</p>
+    <p>I work in healthcare, legal and non-profit settings, and I apply the Ghana Data Protection Act (Act 843) and GDPR in my reviews. My first career was in accounting, which is why I treat evidence, reconciliation and segregation of duties as habits rather than checklist items.</p>
+  </section>
+
+  <section id="services">
+    <h2>What I do</h2>
+    <ul class="chips">
+      <li>Risk assessments and risk registers</li>
+      <li>ISO 27001 gap analysis and audit readiness</li>
+      <li>Internal and IT audit, SOX ITGC testing</li>
+      <li>Data protection compliance</li>
+      <li>Vendor and third-party risk</li>
+      <li>IT asset and software licence compliance</li>
+      <li>Incident response, disaster recovery and continuity plans</li>
+      <li>User access, privileged access and change control reviews</li>
+      <li>Security awareness training</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h4>Founder &amp; CEO, Cybersecurity GRC Consultant, Chayil SecureX</h4>
+      <div class="meta">June 2024 to present · Accra</div>
+      <p>Lead a small team delivering compliance, risk and audit-readiness work. Completed 5+ gap and readiness assessments, drafted 12 security policies and procedures, assessed 7+ vendors, and maintain risk registers for clients (30+ risks in the largest). Represent clients before regulators and external auditors, and designed a 108-point GRC maturity scoring engine for healthcare facilities with a companion version for financial institutions.</p>
+    </div>
+
+    <div class="card">
+      <h4>Information Security Consultant</h4>
+      <div class="meta">2022 to present</div>
+      <p>Advise research, policy and membership organisations on security governance, data protection frameworks and practical guidance for non-technical staff, and deliver staff awareness training.</p>
+    </div>
+
+    <div class="card">
+      <h4>Financial Officer</h4>
+      <div class="meta">March 2017 to 2021</div>
+      <p>Ran financial reporting, budgeting and compliance, supported audit preparation, and built internal controls including reconciliation processes.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work samples</h2>
+    <p class="note">Sector templates I built for client engagements. They contain placeholder organisations and illustrative data only, no client information.</p>
+
+    <h3>ISO 27001 ISMS model</h3>
+    <div class="samples">
+      <div class="sample">
+        <span class="tag">PREVIEW</span>
+        <h4>Healthcare ISMS and GRC model</h4>
+        <p>A complete ISO 27001:2022 toolkit for clinics and hospitals: dashboard, risk register, risk appetite, asset and control registers, risk-to-control mapping, treatment plan and Statement of Applicability. The preview shows the dashboard, risk register and Statement of Applicability.</p>
+        <a class="dl" href="work/ISO27001_Healthcare_ISMS_Model_Preview.pdf" target="_blank" rel="noopener">View preview (PDF)</a>
+        <a class="dl" style="margin-top:6px" href="mailto:hagancharles14@gmail.com?subject=Request%20for%20Healthcare%20ISMS%20Model">Request the full model</a>
+      </div>
+    </div>
+
+    <h3>GRC maturity self-assessments</h3>
+    <div class="samples">
+      <div class="sample">
+        <span class="tag">FREE DOWNLOAD</span>
+        <h4>Healthcare GRC maturity self-assessment</h4>
+        <p>ISO 27001-aligned questionnaire for healthcare providers with automatic domain scoring, maturity levels and RAG ratings. Try it on your own organisation.</p>
+        <a class="dl" href="work/Healthcare_GRC_Maturity_Self_Assessment.xlsx" download>Download (XLSX)</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PREVIEW</span>
+        <h4>Financial institution GRC maturity self-assessment</h4>
+        <p>The same scoring approach built for microfinance, savings and loans, fintechs and rural banks, with questions tied to Bank of Ghana expectations.</p>
+        <a class="dl" href="work/Financial_GRC_Maturity_Preview.pdf" target="_blank" rel="noopener">View preview (PDF)</a>
+        <a class="dl" style="margin-top:6px" href="mailto:hagancharles14@gmail.com?subject=Request%20for%20Financial%20GRC%20Maturity%20Self-Assessment">Request the full tool</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PREVIEW</span>
+        <h4>Combined maturity self-assessment</h4>
+        <p>Healthcare and financial assessments in one workbook with a shared results page, for advisers working across both sectors.</p>
+        <a class="dl" href="work/Combined_GRC_Maturity_Preview.pdf" target="_blank" rel="noopener">View preview (PDF)</a>
+        <a class="dl" style="margin-top:6px" href="mailto:hagancharles14@gmail.com?subject=Request%20for%20Combined%20GRC%20Maturity%20Self-Assessment">Request the full tool</a>
+      </div>
+    </div>
+
+    <h3>Policies and governance frameworks</h3>
+    <div class="samples">
+      <div class="sample">
+        <span class="tag">PDF</span>
+        <h4>Information Security and Privacy Policy</h4>
+        <p>Single governing policy for a professional services firm, mapped to ISO 27001, ISO 27701, NIST CSF 2.0, COSO ERM and the Ghana Data Protection Act.</p>
+        <a class="dl" href="work/ISPP-001_Information_Security_Privacy_Policy.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PDF</span>
+        <h4>Internal Control and Risk Management Framework</h4>
+        <p>Risk governance built on COSO ERM 2017 and COSO Internal Control 2013, including a risk appetite statement.</p>
+        <a class="dl" href="work/ICRMF-001_Internal_Control_Risk_Management_Framework.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PDF</span>
+        <h4>Technology Adoption Strategy</h4>
+        <p>A governance-led approach to evaluating and adopting new technology, aligned to COBIT 2019 and ISO 27001.</p>
+        <a class="dl" href="work/TAS-001_Technology_Adoption_Strategy.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PDF</span>
+        <h4>IT Infrastructure and Cybersecurity Measures</h4>
+        <p>Documents the IT environment and the security controls around it: network design, access, endpoints and administration.</p>
+        <a class="dl" href="work/ITCS-001_IT_Infrastructure_Cybersecurity_Measures.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="sample">
+        <span class="tag">PDF</span>
+        <h4>Hospital Security Policy</h4>
+        <p>Patient data protection policy covering roles, definitions and compliance with HIPAA and Ghana's Act 843.</p>
+        <a class="dl" href="work/Hospital_Security_Policy.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p style="color:var(--muted);margin-top:-6px">Fifteen certifications. Where the issuer offers a public verification page, it is linked.</p>
+
+    <h3>Audit and ISMS</h3>
+    <ul class="certs">
+      <li><b>ISO/IEC 27001:2022 Lead Auditor</b><span>International Cybersecurity and Digital Forensics Academy, November 2026</span></li>
+      <li><b>ISO/IEC 27001:2022 Information Security Associate</b><span>SkillFront, October 2026</span></li>
+      <li><b>ISO/IEC 27001:2022 ISMS Foundation Standard &amp; Best Practice</b><span>January 2026</span></li>
+      <li><b>Cybersecurity GRC: IT Audit Programme</b><span>YesYouCan CyberSecure, September 2024. SOX ITGC testing, PCI DSS, third-party risk</span></li>
+    </ul>
+
+    <h3>Governance, privacy and AI</h3>
+    <ul class="certs">
+      <li><b>Certified GRC Professional (CGRCP)</b><a class="verify" href="#" data-todo="add verification URL">Verify</a><span>Red Team Leaders, November 2026</span></li>
+      <li><b>Certified Threat Intelligence &amp; Governance Analyst (CTIGA)</b><a class="verify" href="#" data-todo="add verification URL">Verify</a><span>Red Team Leaders, November 2026</span></li>
+      <li><b>AI Security &amp; Governance</b><span>Securiti, 1.5 CPE</span></li>
+      <li><b>PrivacyOps Academy Certified</b><span>Securiti, 4 CPE</span></li>
+      <li><b>Google AI Professional Certificate</b><a class="verify" href="#" data-todo="add verification URL">Verify</a><span>Coursera / Google, October 2026</span></li>
+    </ul>
+
+    <h3>Security operations and awareness</h3>
+    <ul class="certs">
+      <li><b>Google Cybersecurity Professional Certificate</b><a class="verify" href="#" data-todo="add verification URL">Verify</a><span>Coursera / Google, October 2026</span></li>
+      <li><b>Certified SME Cyber Security Officer (CSCSO)</b><span>EU Cyber Academy, October 2026</span></li>
+      <li><b>Certified Ransomware Protection Officer (CRPO)</b><span>EU Cyber Academy, October 2026</span></li>
+      <li><b>Certified Cybersecurity Educator Professional (CCEP)</b><a class="verify" href="#" data-todo="add verification URL">Verify</a><span>Red Team Leaders, November 2026</span></li>
+      <li><b>Cyber Threat Management</b><span>Cisco Networking Academy, October 2026</span></li>
+      <li><b>Introduction to Cybersecurity</b><span>Cisco Networking Academy, March 2026</span></li>
+    </ul>
+
+    <p class="next">Next: CISA, planned for the second half of 2027.</p>
+  </section>
+
+  <section id="speaking">
+    <h2>Speaking and media</h2>
+    <ul class="plain">
+      <li>Moderator, MOBEX Africa 2026 session</li>
+      <li>Represented Ghana’s digital ecosystem at GITEX Nigeria 2025</li>
+      <li>Panelist and moderator, Fintech for Inclusion Africa Summit, on cybersecurity and digital trust</li>
+      <li>Featured cybersecurity expert on national media (TV3, MX24)</li>
+    </ul>
+  </section>
+
+  <section id="memberships">
+    <h2>Memberships and education</h2>
+    <p>Internet Society (Global and Ghana Chapter). Institute of ICT Professionals Ghana (IIPGH), Security Working Group and Editorial Board. Association of Cybersecurity Experts.</p>
+    <p>BSc Business Administration (Accounting), University of Education, Winneba.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:hagancharles14@gmail.com">hagancharles14@gmail.com</a><br>
+    <a href="https://linkedin.com/in/charles-hagan-itaudit1" target="_blank" rel="noopener">linkedin.com/in/charles-hagan-itaudit1</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Charles Fiifi Hagan, Accra, Ghana</div>
+</footer>
+
+</body>
+</html>
